@@ -17,6 +17,9 @@ function TaskManager() {
     this.viewTasks = function() {
       console.log("Tasks afslşkalşsfklşasşlkasf:");
       this.tasks.forEach(task => {
+        console.log(`${task.name} - ${task.completed ? 'asfjfaskjlasfjlkfaslkfas' : 'yasdaasfsaf'}`);
+        console.log(`${task.name} - ${task.completed ? 'asfjfaskjlasfjlkfaslkfas' : 'a'}`);
+        console.log(`${task.name} - ${task.completed ? 'asfjfaskjlasfjlkfaslkfas' : 'v'}`);
         console.log(`${task.name} - ${task.completed ? 'asfjfaskjlasfjlkfaslkfas' : 'ha'}`);
       });
     };
