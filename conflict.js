@@ -10,7 +10,7 @@ function TaskManager() {
       if (taskIndex !== -1) {
         this.tasks[taskIndex].completed = true;
       } else {
-        console.log("conflict");
+        console.log("Hello world!");
       }
     };
    
@@ -18,6 +18,7 @@ function TaskManager() {
       console.log("con");
       this.tasks.forEach(task => {
         console.log(`${task.name} - ${task.completed ? 'Conflict' : 'Not Conflict'}`);
+        console.log(`${task.name} - ${task.completed ? 'Hello' : 'Good Bye'}`);
       });
     };
   }
