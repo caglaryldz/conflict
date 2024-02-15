@@ -10,14 +10,14 @@ function TaskManager() {
       if (taskIndex !== -1) {
         this.tasks[taskIndex].completed = true;
       } else {
-        console.log("Task not found!");
+        console.log("Hello world!");
       }
     };
    
     this.viewTasks = function() {
-      console.log("Tasks:");
+      console.log("Hi");
       this.tasks.forEach(task => {
-        console.log(`${task.name} - ${task.completed ? 'Completed' : 'Pending'}`);
+        console.log(`${task.name} - ${task.completed ? 'Hello' : 'Good Bye'}`);
       });
     };
   }
