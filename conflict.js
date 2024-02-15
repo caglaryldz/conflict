@@ -10,21 +10,21 @@ function TaskManager() {
       if (taskIndex !== -1) {
         this.tasks[taskIndex].completed = true;
       } else {
-        console.log("Task not found!");
+        console.log("Task found!");
       }
     };
    
     this.viewTasks = function() {
-      console.log("Tasks:");
+      console.log("Tasks bulunamdı:");
       this.tasks.forEach(task => {
-        console.log(`${task.name} - ${task.completed ? 'Completed' : 'Pending'}`);
+        console.log(`${task.name} - ${task.completed ? 'tamamlandı' : 'tamamlanmadı'}`);
       });
     };
   }
    
   // Testing the TaskManager function
   const taskManager = new TaskManager();
-  taskManager.addTask("Task 1");
-  taskManager.addTask("Task 2");
-  taskManager.completeTask("Task 1");
+  taskManager.addTask("Task 100");
+  taskManager.addTask("Task 200");
+  taskManager.completeTask("Task 100");
   taskManager.viewTasks();
