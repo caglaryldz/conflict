@@ -10,7 +10,7 @@ function TaskManager() {
       if (taskIndex !== -1) {
         this.tasks[taskIndex].completed = true;
       } else {
-        console.log("Task found!");
+        console.log("Task!");
       }
     };
    
@@ -24,7 +24,7 @@ function TaskManager() {
    
   // Testing the TaskManager function
   const taskManager = new TaskManager();
-  taskManager.addTask("Task 100");
-  taskManager.addTask("Task 200");
+  taskManager.addTask("Task 10");
+  taskManager.addTask("Task 20");
   taskManager.completeTask("Task 100");
   taskManager.viewTasks();
