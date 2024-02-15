@@ -15,7 +15,7 @@ function TaskManager() {
     };
    
     this.viewTasks = function() {
-      console.log("con");
+      console.log("Tasks afslşkalşsfklşasşlkasf:");
       this.tasks.forEach(task => {
         console.log(`${task.name} - ${task.completed ? 'Conflict' : 'Not Conflict'}`);
         console.log(`${task.name} - ${task.completed ? 'Hello' : 'Good Bye'}`);
@@ -25,7 +25,7 @@ function TaskManager() {
    
   // Testing the TaskManager function
   const taskManager = new TaskManager();
-  taskManager.addTask("Task 1");
-  taskManager.addTask("Task 2");
-  taskManager.completeTask("Task 1");
+  taskManager.addTask("Task 10");
+  taskManager.addTask("Task 20");
+  taskManager.completeTask("Task 100");
   taskManager.viewTasks();
